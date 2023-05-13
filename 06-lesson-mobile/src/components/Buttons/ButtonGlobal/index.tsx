@@ -7,7 +7,7 @@ import { getPixel } from "@globals/helpers/getPixel";
 import { ActivityIndicator, TouchableOpacityProps } from "react-native";
 import { ColorsProps, SizesProps } from "@globals/styles";
 
-interface ButtonContainedProps extends TouchableOpacityProps {
+interface ButtonGlobalProps extends TouchableOpacityProps {
   title?: string;
   textSize?: SizesProps;
   textWeight?: "regular" | "medium" | "bold";
@@ -40,8 +40,8 @@ interface ButtonContainedProps extends TouchableOpacityProps {
   marginRight?: number;
 }
 
-export function ButtonContained({
-  title = "ButtonContained",
+export function ButtonGlobal({
+  title = "ButtonGlobal",
   textSize = "text-base",
   textWeight = "regular",
   active = true,
@@ -70,7 +70,7 @@ export function ButtonContained({
   marginRight,
 
   ...rest
-}: ButtonContainedProps) {
+}: ButtonGlobalProps) {
   const theme = useTheme();
 
   return (

@@ -1,6 +1,6 @@
 import { Typography } from "@components/Texts/Typography";
 import { Container } from "./styles";
-import { ButtonContained } from "@components/Buttons/ButtonContained";
+import { ButtonGlobal } from "@components/Buttons/ButtonGlobal";
 import { getPixel } from "@globals/helpers/getPixel";
 import { BackgroundPng } from "@globals/assets";
 
@@ -20,7 +20,7 @@ export function SignIn() {
           Gestão de uso veículo
         </Typography>
 
-        <ButtonContained
+        <ButtonGlobal
           width="100%"
           textWeight="medium"
           title="Entrar com o Google"
